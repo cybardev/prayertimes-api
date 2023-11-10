@@ -74,7 +74,15 @@ export default {
                       getPrayerTimes(parseURL(request.url)),
                       undefined,
                       2
-                  )
+                  ),
+                  {
+                      status: 200,
+                      headers: {
+                          "Access-Control-Allow-Methods": "GET",
+                          "Access-Control-Allow-Origin":
+                              "https://prayers.cybar.dev",
+                      },
+                  }
               )
             : new Response("Invalid Request: only GET requests supported");
     },
