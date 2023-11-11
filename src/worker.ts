@@ -78,6 +78,7 @@ export default {
                   {
                       status: 200,
                       headers: {
+                          "content-type": "application/json;charset=UTF-8",
                           "Access-Control-Allow-Methods": "GET",
                           "Access-Control-Allow-Origin":
                               "https://prayers.cybar.dev",
