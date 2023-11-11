@@ -47,11 +47,19 @@ function getPrayerTimes(params) {
             position: pos,
         },
         data: {
-            fajr: times.fajr,
-            zuhr: times.dhuhr,
-            asr: times.asr,
-            maghrib: times.maghrib,
-            isha: times.isha,
+            prayers: {
+                fajr: times.fajr,
+                zuhr: times.dhuhr,
+                asr: times.asr,
+                maghrib: times.maghrib,
+                isha: times.isha,
+            },
+            extras: {
+                imsak: times.imsak,
+                sunrise: times.sunrise,
+                sunset: times.sunset,
+                midnight: times.midnight,
+            },
         },
     };
 }
