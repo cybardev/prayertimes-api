@@ -24,10 +24,9 @@ function processDate(year, month, date) {
 function processPos(latitude, longitude) {
     // default coordinates: Halifax, NS, Canada
     const defaultPos = { latitude: 44.65, longitude: -63.57 };
-    return {
-        latitude: isNaN(latitude) ? defaultPos.latitude : latitude,
-        longitude: isNaN(longitude) ? defaultPos.longitude : longitude,
-    };
+    return isNaN(latitude) || isNaN(longitude)
+        ? defaultPos
+        : { latitude: latitude, longitude: longitude };
 }
 
 function getPrayerTimes(params) {
