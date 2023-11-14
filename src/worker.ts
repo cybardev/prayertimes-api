@@ -90,6 +90,8 @@ export default async (req, ctx) => {
                   headers: {
                       "content-type": "application/json;charset=UTF-8",
                       "Access-Control-Allow-Methods": "GET",
+                      "Access-Control-Allow-Origin":
+                          "https://prayers.cybar.dev",
                   },
               }
           )
@@ -97,6 +99,7 @@ export default async (req, ctx) => {
               status: 405,
               headers: {
                   "Access-Control-Allow-Methods": "GET",
+                  "Access-Control-Allow-Origin": "https://prayers.cybar.dev",
               },
           });
 };
