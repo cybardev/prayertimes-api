@@ -3,5 +3,7 @@ main = "src/worker.ts"
 compatibility_date = "2023-11-10"
 
 routes = [
+	{ pattern = "prayertimes.cybar.dev", custom_domain = true },
 	{ pattern = "prayertimes.cybar.dev/api", zone_name = "cybar.dev" }
 ]
+
