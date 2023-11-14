@@ -2,3 +2,6 @@ name = "prayertimes"
 main = "src/worker.ts"
 compatibility_date = "2023-11-10"
 
+routes = [
+	{ pattern = "prayers.cybar.dev/api", zone_name = "cybar.dev" }
+]
