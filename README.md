@@ -2,6 +2,8 @@
 
 API to fetch Islamic prayer times for a given date and location using `GET` requests and query parameters
 
+> **Archived Repo:** Code has been integrated into [github.com/cybardev/prayers](https://github.com/cybardev/prayers)
+
 ## Usage
 
 Use query parameters to retrieve prayer times. For example, to get prayer times of 2023-11-09 at latitude 44.65 and longitude -63.59 use:
